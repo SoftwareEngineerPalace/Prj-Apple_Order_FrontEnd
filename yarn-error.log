@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add typescript -g
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.22.11
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@testing-library%2fjest-dom: ETIMEDOUT
+      at Timeout._onTimeout (/usr/share/yarn/lib/cli.js:141550:19)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
+
+npm manifest: 
+  {
+    "name": "apple_order_front_end",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.17.0",
+      "@testing-library/react": "^13.4.0",
+      "@testing-library/user-event": "^13.5.0",
+      "antd": "^5.14.0",
+      "less": "^4.2.0",
+      "query-string": "^8.2.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "5.0.1"
+    },
+    "scripts": {
+      "dev": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+      "@types/react-dom": "^18.2.19"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
