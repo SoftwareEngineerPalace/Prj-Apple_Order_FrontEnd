@@ -77,11 +77,7 @@ const App = () => {
             }}
           />
           {!!image ? (
-            <Image
-              width={200}
-              height={150}
-              src={`/assets/${image}`}
-            ></Image>
+            <Image width={200} height={150} src={`/assets/${image}`}></Image>
           ) : (
             <span>no image</span>
           )}
