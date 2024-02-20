@@ -107,6 +107,12 @@ const App = () => {
           expandable={{
             expandedRowRender,
             expandRowByClick: true,
+            expandIcon: ({ expanded, onExpand, record }) =>
+              expanded ? (
+                <div onClick={(e) => onExpand(record, e)} />
+              ) : (
+                <div onClick={(e) => onExpand(record, e)} />
+              ),
           }}
           dataSource={orderList}
           rowKey="id"
