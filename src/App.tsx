@@ -5,7 +5,7 @@ import { Image, Table, Card } from "antd";
 import { useEffect } from "react";
 import queryString from "query-string";
 import { Order, LineItem } from "./model";
-const hostname = "117.78.8.8";
+const hostname = "localhost";
 
 const App = () => {
   const [forceFresh, setForceFresh] = useState(false);
