@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+src/.umi
+src/.umi-production
+pnpm-lock.yaml
+public
+package-lock.json
+pnpm-lock.yaml

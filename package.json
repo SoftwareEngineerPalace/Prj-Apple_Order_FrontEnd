@@ -1,38 +1,51 @@
 {
-  "name": "apple_order_front_end",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "antd": "^5.14.0",
-    "less": "^4.2.0",
-    "query-string": "^8.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react-dom": "^18.2.19"
-  }
+    "name": "apple_order_front_end",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "antd": "^5.14.0",
+        "less": "^4.2.0",
+        "query-string": "^8.2.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "^5.0.1"
+    },
+    "scripts": {
+        "dev": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "prepare": "husky",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --config .prettierrc '.' --write"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
+        "@eslint/js": "^9.23.0",
+        "@types/react-dom": "^18.2.19",
+        "eslint": "^9.23.0",
+        "eslint-plugin-react": "^7.37.4",
+        "globals": "^16.0.0",
+        "husky": "^9.1.7",
+        "prettier": "3.5.3",
+        "typescript-eslint": "^8.29.0"
+    }
 }
