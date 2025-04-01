@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "./App.less";
-import type { TableColumnsType } from "antd";
-import { Image, Table, Card } from "antd";
-import { useEffect } from "react";
-import queryString from "query-string";
-import { Order, LineItem } from "./model";
+import React, { useState } from 'react';
+import './App.less';
+import type { TableColumnsType } from 'antd';
+import { Image, Table, Card } from 'antd';
+import { useEffect } from 'react';
+import queryString from 'query-string';
+import { Order, LineItem } from './model';
 // test 1
-const hostname = "localhost";
+const hostname = 'localhost';
 
 const App = () => {
     const [forceFresh, setForceFresh] = useState(false);
@@ -40,32 +40,32 @@ const App = () => {
     const expandedRowRender = React.useCallback(
         ({ id, image }: any) => {
             const columns: TableColumnsType<LineItem> = [
-                { title: "Order ID", dataIndex: "orderId", key: "orderId" },
-                { title: "ID", dataIndex: "id", key: "id" },
-                { title: "Item", dataIndex: "item", key: "item" },
-                { title: "Profit", dataIndex: "profit", key: "profit" },
-                { title: "Sales", dataIndex: "sales", key: "sales" },
+                { title: 'Order ID', dataIndex: 'orderId', key: 'orderId' },
+                { title: 'ID', dataIndex: 'id', key: 'id' },
+                { title: 'Item', dataIndex: 'item', key: 'item' },
+                { title: 'Profit', dataIndex: 'profit', key: 'profit' },
+                { title: 'Sales', dataIndex: 'sales', key: 'sales' },
             ];
             return (
                 <div
                     style={{
-                        display: "flex",
-                        justifyContent: "space-evenly",
-                        alignItems: "center",
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                        alignItems: 'center',
                     }}
                 >
                     <Table
                         columns={columns}
                         dataSource={subOrderListMap[id]}
                         pagination={false}
-                        rowKey={"id"}
+                        rowKey={'id'}
                         locale={{
                             emptyText: (
                                 <div
                                     style={{
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
                                     }}
                                 >
                                     <p style={{ marginBottom: 0 }}>no items</p>
@@ -81,15 +81,15 @@ const App = () => {
     );
 
     const columns: TableColumnsType<Order> = [
-        { title: "ID", dataIndex: "id" },
-        { title: "Category", dataIndex: "category", key: "category" },
-        { title: "Sub-Category", dataIndex: "subCategory", key: "subCategory" },
-        { title: "Segment", dataIndex: "segment", key: "segment" },
-        { title: "Product Name", dataIndex: "productName", key: "productName" },
-        { title: "Order Date", dataIndex: "orderDate", key: "orderDate" },
-        { title: "Region", dataIndex: "region", key: "region" },
-        { title: "Profit", dataIndex: "profit", key: "profit" },
-        { title: "Sales", dataIndex: "sales", key: "sales" },
+        { title: 'ID', dataIndex: 'id' },
+        { title: 'Category', dataIndex: 'category', key: 'category' },
+        { title: 'Sub-Category', dataIndex: 'subCategory', key: 'subCategory' },
+        { title: 'Segment', dataIndex: 'segment', key: 'segment' },
+        { title: 'Product Name', dataIndex: 'productName', key: 'productName' },
+        { title: 'Order Date', dataIndex: 'orderDate', key: 'orderDate' },
+        { title: 'Region', dataIndex: 'region', key: 'region' },
+        { title: 'Profit', dataIndex: 'profit', key: 'profit' },
+        { title: 'Sales', dataIndex: 'sales', key: 'sales' },
     ];
 
     return (
