@@ -7,13 +7,13 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default defineConfig([
-    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx,json}'] },
+    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
     {
-        files: ['**/*.{js,mjs,cjs,ts,jsx,tsx,json}'],
+        files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
         languageOptions: { globals: globals.browser },
     },
     {
-        files: ['**/*.{js,mjs,cjs,ts,jsx,tsx,json}'],
+        files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
         plugins: { js },
         extends: ['js/recommended'],
     },
