@@ -1,6 +1,6 @@
 {
     "name": "apple_order_front_end",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
@@ -11,7 +11,8 @@
         "query-string": "^8.2.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-scripts": "^5.0.1"
+        "react-scripts": "^5.0.1",
+        "standard-version": "^9.5.0"
     },
     "scripts": {
         "dev": "react-scripts start",
@@ -21,7 +22,8 @@
         "prepare": "husky",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "format": "prettier --config .prettierrc '.' --write"
+        "format": "prettier --config .prettierrc '.' --write",
+        "release": "standard-version && git push --follow-tags"
     },
     "browserslist": {
         "production": [
